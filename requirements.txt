@@ -1,0 +1,7 @@
+Flask
+requests
+groq
+bleach
+httpx
+gunicorn
+waitress

@@ -1,0 +1,573 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock %}
+{% block content %}
+<section class="container fade-in">
+    <div class="about-header">
+        <h1 class="section-title">About Us</h1>
+        <div class="title-accent"></div>
+    </div>
+    
+    <div class="about-grid">
+        <div class="about-card">
+            <div class="card-content">
+                <p class="about-text">
+                    <span class="highlight primary">EduSpark Academy</span> is a premier tuition center in Hyderabad, Pakistan, dedicated to igniting a passion for learning among students from nursery to 10th class. Established in <span class="highlight accent">2025</span>, we offer expert tutoring in subjects including <span class="highlight primary">Computer Science, Mathematics, Biology, English, Islamiyat, Pakistan Studies, Physics</span>, and more. Our mission is to empower every student with the knowledge and skills to excel academically and beyond.
+                </p>
+                <p class="about-text">
+                    Our teaching philosophy revolves around <span class="highlight accent">small class sizes</span>, <span class="highlight primary">experienced educators</span>, and a <span class="highlight accent">student-centered approach</span>. We believe in fostering <span class="highlight primary">curiosity</span>, <span class="highlight accent">critical thinking</span>, and <span class="highlight primary">confidence</span>, ensuring each child reaches their full potential. Located in the heart of Hyderabad, we are committed to serving our community with <span class="highlight accent">quality education</span> tailored to individual needs.
+                </p>
+            </div>
+            <div class="card-decoration">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+            </div>
+        </div>
+        
+        <div class="about-card vision-mission">
+            <div class="card-content">
+                <div class="vision-mission-section">
+                    <h3 class="card-title">Our Mission</h3>
+                    <p class="about-text">
+                        To <span class="highlight primary">inspire</span> and <span class="highlight accent">educate</span> the next generation by delivering <span class="highlight primary">innovative</span>, <span class="highlight accent">accessible</span>, and <span class="highlight primary">personalized</span> learning experiences.
+                    </p>
+                </div>
+                
+                <div class="vision-mission-section">
+                    <h3 class="card-title">Our Vision</h3>
+                    <p class="about-text">
+                        To be the <span class="highlight accent">leading tuition center</span> in Hyderabad, recognized for <span class="highlight primary">academic excellence</span> and <span class="highlight accent">student success</span>.
+                    </p>
+                </div>
+            </div>
+            <div class="card-decoration">
+                <div class="icon-decoration top-left">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="50" fill="var(--primary)" opacity="0.15"/>
+                        <path d="M50 20 L65 50 L50 80 L35 50 Z" fill="var(--accent)" transform="rotate(45 50 50)"/>
+                    </svg>
+                </div>
+                <div class="icon-decoration bottom-right">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="50" fill="var(--accent)" opacity="0.15"/>
+                        <path d="M50 20 L65 50 L50 80 L35 50 Z" fill="var(--primary)" transform="rotate(45 50 50)"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="image-gallery">
+        <div class="gallery-item">
+            <div class="image-card">
+                <div class="image-wrapper">
+                    <img src="{{ url_for('static', filename='images/students-learning.jpg') }}" alt="Students Learning" loading="lazy">
+                </div>
+                <p class="image-caption">Students engaged in a Mathematics class</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <div class="image-card">
+                <div class="image-wrapper">
+                    <img src="{{ url_for('static', filename='images/classroom.jpg') }}" alt="Classroom Environment" loading="lazy">
+                </div>
+                <p class="image-caption">A vibrant classroom environment</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="timeline-section">
+        <h2 class="section-title">Our Milestones</h2>
+        <div class="title-accent centered"></div>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-card">
+                        <h3 class="timeline-title">2025 - Founded</h3>
+                        <p class="timeline-text">EduSpark Academy was launched to bring quality education to Hyderabad, Pakistan.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional timeline items can be added as the academy grows -->
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-card">
+                        <h3 class="timeline-title">Future Growth</h3>
+                        <p class="timeline-text">We look forward to expanding our programs and reaching more students in the coming years.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* About Page Styles */
+    .fade-in {
+        animation: fadeIn 1s ease-out forwards;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    .about-header {
+        text-align: center;
+        margin-bottom: 3rem;
+        position: relative;
+    }
+    
+    .section-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        color: var(--primary);
+        background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .title-accent {
+        height: 4px;
+        width: 100px;
+        background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+        margin: 0 auto;
+        border-radius: 2px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .title-accent::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+        animation: shimmer 2s infinite;
+    }
+    
+    .title-accent.centered {
+        margin: 0 auto;
+    }
+    
+    @keyframes shimmer {
+        100% { left: 100%; }
+    }
+    
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .about-card {
+        position: relative;
+        background: white;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        height: 100%;
+    }
+    
+    .about-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.4s ease;
+    }
+    
+    .about-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    }
+    
+    .about-card:hover::before {
+        transform: scaleX(1);
+    }
+    
+    .card-content {
+        padding: 2rem;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .card-decoration {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        overflow: hidden;
+    }
+    
+    .floating-shape {
+        position: absolute;
+        opacity: 0.05;
+        border-radius: 50%;
+    }
+    
+    .shape-1 {
+        width: 200px;
+        height: 200px;
+        background: var(--primary);
+        top: -100px;
+        right: -50px;
+        animation: float 15s infinite alternate;
+    }
+    
+    .shape-2 {
+        width: 150px;
+        height: 150px;
+        background: var(--accent);
+        bottom: -75px;
+        left: -50px;
+        animation: float 12s infinite alternate-reverse;
+    }
+    
+    @keyframes float {
+        0% { transform: translate(0, 0) rotate(0deg); }
+        33% { transform: translate(10px, 15px) rotate(5deg); }
+        66% { transform: translate(-10px, 10px) rotate(-5deg); }
+        100% { transform: translate(0, -15px) rotate(0deg); }
+    }
+    
+    .about-text {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+        color: var(--text-dark);
+    }
+    
+    .about-text:last-child {
+        margin-bottom: 0;
+    }
+    
+    .highlight {
+        font-weight: 600;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .highlight.primary {
+        color: var(--primary);
+    }
+    
+    .highlight.accent {
+        color: var(--accent-dark);
+    }
+    
+    .highlight::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: currentColor;
+        opacity: 0.3;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease;
+    }
+    
+    .highlight:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    
+    .vision-mission-section {
+        margin-bottom: 2rem;
+    }
+    
+    .vision-mission-section:last-child {
+        margin-bottom: 0;
+    }
+    
+    .card-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: var(--primary);
+        position: relative;
+        display: inline-block;
+        background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .card-title::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 50px;
+        height: 3px;
+        background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+        border-radius: 2px;
+    }
+    
+    .icon-decoration {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .top-left {
+        top: 20px;
+        left: 20px;
+    }
+    
+    .bottom-right {
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .icon-decoration svg {
+        width: 100%;
+        height: 100%;
+        animation: rotate 20s linear infinite;
+    }
+    
+    @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    
+    .image-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+    
+    .gallery-item {
+        text-align: center;
+    }
+    
+    .image-card {
+        transition: all 0.3s ease;
+    }
+    
+    .image-wrapper {
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+    
+    .image-wrapper::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(30, 58, 138, 0.1), rgba(30, 58, 138, 0.4));
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+    }
+    
+    .image-wrapper img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .image-card:hover .image-wrapper::before {
+        opacity: 1;
+    }
+    
+    .image-card:hover .image-wrapper img {
+        transform: scale(1.1);
+    }
+    
+    .image-caption {
+        margin-top: 1rem;
+        font-style: italic;
+        color: var(--primary);
+        font-size: 0.95rem;
+    }
+    
+    .timeline-section {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        position: relative;
+    }
+    
+    .timeline {
+        position: relative;
+        padding: 3rem 0;
+    }
+    
+    .timeline::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(to bottom, var(--primary), var(--accent));
+        border-radius: 2px;
+    }
+    
+    .timeline-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 3rem;
+    }
+    
+    .timeline-item:last-child {
+        margin-bottom: 0;
+    }
+    
+    .timeline-marker {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .timeline-dot {
+        width: 20px;
+        height: 20px;
+        background: white;
+        border-radius: 50%;
+        border: 4px solid var(--accent);
+        box-shadow: 0 0 0 4px rgba(30, 58, 138, 0.3);
+        animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7); }
+        70% { box-shadow: 0 0 0 10px rgba(251, 191, 36, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0); }
+    }
+    
+    .timeline-content {
+        width: 50%;
+        padding-left: 2rem;
+    }
+    
+    .timeline-card {
+        background: white;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        position: relative;
+        transition: all 0.3s ease;
+    }
+    
+    .timeline-card::before {
+        content: '';
+        position: absolute;
+        left: -12px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-width: 12px 12px 12px 0;
+        border-style: solid;
+        border-color: transparent white transparent transparent;
+    }
+    
+    .timeline-card:hover {
+        transform: translateX(5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    }
+    
+    .timeline-title {
+        font-family: 'Montserrat', sans-serif;
+        color: var(--primary);
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+    }
+    
+    .timeline-text {
+        color: var(--text-dark);
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+        .about-grid,
+        .image-gallery {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .section-title {
+            font-size: 2rem;
+        }
+        
+        .timeline::before {
+            left: 30px;
+        }
+        
+        .timeline-item {
+            justify-content: flex-start;
+        }
+        
+        .timeline-content {
+            width: calc(100% - 60px);
+            padding-left: 1.5rem;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .container {
+            padding: 1.5rem;
+        }
+        
+        .about-text {
+            font-size: 1rem;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+        }
+        
+        .timeline-card {
+            padding: 1rem;
+        }
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: FlaskX
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://github.com/greyli/flaskx
+Author: Grey Li
+Author-email: withlihui@gmail.com
+License: MIT
+Keywords: flask extension development
+Platform: any
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: Flask
+
+
+FlaskX
+---------------
+Flask application template builder.
+
+

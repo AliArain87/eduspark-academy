@@ -1,0 +1,4 @@
+__version__ = '0.1'
+
+def flaskx():
+    print('hello FlaskX')

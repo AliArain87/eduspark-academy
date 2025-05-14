@@ -1,0 +1,86 @@
+2025-05-13 01:37:18,049 - __main__ - INFO - Groq client initialized successfully
+2025-05-13 01:37:18,085 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.4:5000
+2025-05-13 01:37:18,086 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-13 01:37:23,206 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:23] "GET / HTTP/1.1" 200 -
+2025-05-13 01:37:23,580 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-05-13 01:37:23,588 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:23] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-05-13 01:37:23,605 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:23] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-05-13 01:37:33,595 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:33] "GET / HTTP/1.1" 200 -
+2025-05-13 01:37:33,748 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-05-13 01:37:33,749 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:33] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-05-13 01:37:33,753 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:33] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-05-13 01:37:39,812 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:39] "GET /about HTTP/1.1" 200 -
+2025-05-13 01:37:39,931 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-05-13 01:37:39,965 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:39] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-05-13 01:37:40,047 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:40] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-05-13 01:37:40,172 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:40] "[36mGET /static/images/students-learning.jpg HTTP/1.1[0m" 304 -
+2025-05-13 01:37:40,204 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:40] "[36mGET /static/images/classroom.jpg HTTP/1.1[0m" 304 -
+2025-05-13 01:37:41,669 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:41] "GET /courses HTTP/1.1" 200 -
+2025-05-13 01:37:41,881 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-05-13 01:37:41,888 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:41] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-05-13 01:37:41,891 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:41] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-05-13 01:37:43,548 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:43] "GET /contact HTTP/1.1" 200 -
+2025-05-13 01:37:43,752 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-05-13 01:37:43,753 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:43] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-05-13 01:37:43,757 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:37:43] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-05-13 01:38:03,129 - __main__ - INFO - Email sent successfully to contact.edusparkacademy@gmail.com
+2025-05-13 01:38:06,676 - __main__ - INFO - Email sent successfully to alihasnain2k19@gmail.co
+2025-05-13 01:38:06,791 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:38:06] "[32mPOST /contact HTTP/1.1[0m" 302 -
+2025-05-13 01:38:07,179 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:38:07] "GET /contact HTTP/1.1" 200 -
+2025-05-13 01:38:07,523 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:38:07] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-05-13 01:38:07,524 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:38:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-05-13 01:38:07,528 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:38:07] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-05-13 01:39:06,251 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 01:39:06,348 - __main__ - INFO - New chatbot response generated for: hi...
+2025-05-13 01:39:06,449 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:39:06] "POST /chatbot HTTP/1.1" 200 -
+2025-05-13 01:39:13,638 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 01:39:13,693 - __main__ - INFO - New chatbot response generated for: how are you...
+2025-05-13 01:39:13,766 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:39:13] "POST /chatbot HTTP/1.1" 200 -
+2025-05-13 01:39:28,152 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 01:39:28,158 - __main__ - INFO - New chatbot response generated for: who is the prime minister of inida...
+2025-05-13 01:39:28,177 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:39:28] "POST /chatbot HTTP/1.1" 200 -
+2025-05-13 01:40:52,015 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:40:52] "GET /courses HTTP/1.1" 200 -
+2025-05-13 01:40:52,793 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:40:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-05-13 01:40:53,065 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:40:53] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-05-13 01:40:53,079 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:40:53] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-05-13 01:40:58,491 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 01:40:58,493 - __main__ - INFO - New chatbot response generated for: Generate a short, motivational message for a stude...
+2025-05-13 01:40:58,495 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:40:58] "POST /quiz HTTP/1.1" 200 -
+2025-05-13 01:40:58,527 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 01:40:58,532 - __main__ - INFO - New chatbot response generated for: Generate a short, motivational message for a stude...
+2025-05-13 01:40:58,533 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:40:58] "POST /quiz HTTP/1.1" 200 -
+2025-05-13 01:41:12,107 - __main__ - INFO - Using cached chatbot response
+2025-05-13 01:41:12,164 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:41:12] "POST /quiz HTTP/1.1" 200 -
+2025-05-13 01:41:12,171 - __main__ - INFO - Using cached chatbot response
+2025-05-13 01:41:12,198 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:41:12] "POST /quiz HTTP/1.1" 200 -
+2025-05-13 01:41:20,172 - __main__ - INFO - Using cached chatbot response
+2025-05-13 01:41:20,177 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:41:20] "POST /quiz HTTP/1.1" 200 -
+2025-05-13 01:41:20,182 - __main__ - INFO - Using cached chatbot response
+2025-05-13 01:41:20,188 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:41:20] "POST /quiz HTTP/1.1" 200 -
+2025-05-13 01:41:23,261 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 01:41:23,267 - __main__ - INFO - New chatbot response generated for: Generate a short, motivational message for a stude...
+2025-05-13 01:41:23,269 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:41:23] "POST /quiz HTTP/1.1" 200 -
+2025-05-13 01:41:23,523 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 01:41:23,531 - __main__ - INFO - New chatbot response generated for: Generate a short, motivational message for a stude...
+2025-05-13 01:41:23,533 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:41:23] "POST /quiz HTTP/1.1" 200 -
+2025-05-13 01:41:27,303 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 01:41:27,312 - __main__ - INFO - New chatbot response generated for: Generate a short, motivational message for a stude...
+2025-05-13 01:41:27,313 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:41:27] "POST /quiz HTTP/1.1" 200 -
+2025-05-13 01:41:27,937 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 01:41:27,971 - __main__ - INFO - New chatbot response generated for: Generate a short, motivational message for a stude...
+2025-05-13 01:41:28,042 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:41:28] "POST /quiz HTTP/1.1" 200 -
+2025-05-13 01:41:30,812 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 01:41:30,823 - __main__ - INFO - New chatbot response generated for: Generate a short, motivational message for a stude...
+2025-05-13 01:41:30,856 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 01:41:30,860 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:41:30] "POST /quiz HTTP/1.1" 200 -
+2025-05-13 01:41:30,939 - __main__ - INFO - New chatbot response generated for: Generate a short, motivational message for a stude...
+2025-05-13 01:41:31,121 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:41:31] "POST /quiz HTTP/1.1" 200 -
+2025-05-13 01:41:35,075 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 01:41:35,082 - __main__ - INFO - New chatbot response generated for: Generate a short, motivational message for a stude...
+2025-05-13 01:41:35,083 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:41:35] "POST /quiz HTTP/1.1" 200 -
+2025-05-13 01:41:35,143 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 01:41:35,244 - __main__ - INFO - New chatbot response generated for: Generate a short, motivational message for a stude...
+2025-05-13 01:41:35,402 - werkzeug - INFO - 127.0.0.1 - - [13/May/2025 01:41:35] "POST /quiz HTTP/1.1" 200 -

@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+
+# Dependencies
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+
+# IDE and Editor files
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite
+
+# Environment variables
+.env
+*.env
+
+# API keys and secrets
+*.key
+*.pem
+
+# Flask-specific
+instance/
+run/
+config.py  # If you have a local config file
+
+# Render-specific (if any local build artifacts)
+node_modules/  # If you add frontend JS dependencies later
