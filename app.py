@@ -1,11 +1,9 @@
+import os
 from flask import Flask, render_template, request, jsonify
 import smtplib
 from email.mime.text import MIMEText
-import os
-from groq import Groq
-import re
-import json
 import logging
+from groq import Groq
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -18,6 +16,12 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 EMAIL_USER = os.getenv("EMAIL_USER")  # e.g., "edusparkacademy@gmail.com"
 EMAIL_PASS = os.getenv("EMAIL_PASS")  # Use Gmail App Password
 
+# Debug print for API key
+if not GROQ_API_KEY:
+    logger.error("GROQ_API_KEY is not set or is None")
+else:
+    logger.info("GROQ_API_KEY is loaded successfully")
+
 # Initialize Groq client
 groq_client = Groq(api_key=GROQ_API_KEY)
 
@@ -26,7 +30,7 @@ GROQ_SYSTEM_PROMPT = """
 You are Grok 3, a friendly and professional assistant for EduSpark Academy, a top tuition center in Hyderabad, Pakistan, offering expert-led tutoring for nursery to 10th class in subjects like Computer Science, Mathematics, Biology, English, Islamiyat, Pakistan Studies, and Physics. Provide concise, attractive, and well-formatted responses using bullet points (e.g., * item *) and bold italic text (e.g., **_text_**) for emphasis. Keep replies short, engaging, and tailored to inspire or assist students and parents. Avoid lengthy explanations unless asked.
 """
 
-# Routes
+# Routes (unchanged)
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -106,7 +110,7 @@ def contact():
             <p>Thank you again for considering <strong>EduSpark Academy</strong>. We’re excited to assist you soon!</p>
         </div>
         <div class="footer">
-            <p>&copy; 2025 EduSpark Academy. All Rights Reserved.</p>
+            <p>© 2025 EduSpark Academy. All Rights Reserved.</p>
         </div>
     </div>
 </body>
